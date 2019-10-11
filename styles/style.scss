@@ -125,7 +125,7 @@ body > header {
     .illustration {
       width: 100%;
       height: 30em;
-      background-image: url('/assets/images/illustration-main.svg');
+      background-image: url('./assets/images/illustration-main.svg');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body > header {
         z-index: -1;
         width: 75%;
         height: 30em;
-        background-image: url('/assets/images/bg-intro-mobile.svg');
+        background-image: url('./assets/images/bg-intro-mobile.svg');
         background-position: top right;
         background-size: contain;
         background-repeat: no-repeat;
@@ -189,31 +189,13 @@ body > header {
         align-self: flex-start;
 
         &::before {
-          background-image: url('/assets/images/bg-intro-desktop.svg');
+          background-image: url('./assets/images/bg-intro-desktop.svg');
           top: 0;
           right: 0;
           height: 50vmax;
           background-size: contain;
         }
       }
-    }
-  }
-
-  .illustration-main {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url('/assets/images/illustration-main.svg'),
-      url('/assets/images/bg-intro-desktop.svg');
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 80%;
-
-    @media screen and (min-width: 1024px) {
-      position: sticky;
     }
   }
 }
