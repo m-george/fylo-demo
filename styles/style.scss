@@ -38,6 +38,10 @@ html {
   @media screen and (max-width: 1024px) {
     font-size: 0.9 * $root-font-size;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.725 * $root-font-size;
+  }
 }
 
 body,
