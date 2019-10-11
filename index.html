@@ -6,54 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fylo | Demo app</title>
 
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/images/favicon-32x32.png"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <img src="assets/images/logo.svg" alt="Fylo" />
-        </div>
+      <div class="header-inner">
+        <nav>
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="Fylo" />
+          </div>
 
-        <div class="nav-links">
-          <a href="#" class="btn">Sign In</a>
-          <button class="btn btn-primary">Sign Up</button>
-        </div>
-      </nav>
+          <div class="nav-links">
+            <a href="#" class="btn sign-in-link">Sign In</a>
+            <a class="btn btn-primary">Sign Up</a>
+          </div>
+        </nav>
 
-      <div class="content">
-        <div class="call-to-action">
-          <h2>All your files in one secure location, accessible anywhere.</h2>
-          <small>
-            Fylo stores all your most important files in one secure location.
-            <br />
-            Access them wherever you need, share and collaborate with friends,
-            family and co-workers.
-          </small>
-          <button class="btn btn-primary call-to-action-btn">
-            Get Started
-          </button>
-        </div>
-
-        <div class="illustration-main">
-          <!-- <img src="assets/images/bg-intro-desktop.svg" alt="" /> -->
-          <!-- <img src="assets/images/illustration-main.svg" alt="" /> -->
+        <div class="content">
+          <div class="illustration"></div>
+          <div class="call-to-action">
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p>
+              Fylo stores all your most important files in one secure location.
+              <br />
+              Access them wherever you need, share and collaborate with friends,
+              family and co-workers.
+            </p>
+            <a class="btn btn-primary call-to-action-btn">
+              Get Started
+            </a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <section>
-        <header>
+        <div class="section-heading">
           <h3>Stay productive, wherever you are</h3>
-          <small>
+          <p>
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
-          </small>
-        </header>
+          </p>
+        </div>
 
         <div>
-          <ul>
+          <ul class="feature-list">
             <li>
               <img src="assets/images/icon-devices.svg" alt="" />
               <h4>All platforms, all devices, all your files</h4>
@@ -70,163 +79,180 @@
         </div>
       </section>
 
-      <section>
-        <header>
+      <section class="app-list-section">
+        <div class="section-heading">
           <h3>Connect with the apps you use everyday</h3>
-          <small>
+          <p>
             Fylo seamlessly integrates with hundreds of apps, meaning you can
             access and work on your files from the apps you already know and
             love.
-          </small>
-        </header>
+          </p>
+        </div>
 
-        <ul class="card-list">
-          <li class="card">
-            <div class="card-img">
-              <img src="assets/images/logo-slack.png" alt="" />
-            </div>
-            <div class="card-content">
-              <h4>Slack</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-                quasi non eum, amet deleniti qui!
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-img">
-              <img src="assets/images/logo-gsuite.png" alt="" />
-            </div>
-            <div class="card-content">
-              <h4>GSuite</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-                inventore vitae quibusdam culpa dolores? Veritatis.
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-img">
-              <img src="assets/images/logo-trello.png" alt="" />
-            </div>
-            <div class="card-content">
-              <h4>Trello</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reiciendis corrupti corporis laborum, debitis omnis quis?
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-img">
-              <img src="assets/images/logo-asana.png" alt="" />
-            </div>
-            <div class="card-content">
-              <h4>Asana</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Corrupti corporis amet facilis eius expedita laboriosam.
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-img">
-              <img src="assets/images/logo-salesforce.png" alt="" />
-            </div>
-            <div class="card-content">
-              <h4>Salesforce</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repudiandae eveniet, maiores harum, sit doloribus nulla.
-              </p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-img">
-              <img src="assets/images/logo-typeform.png" alt="" />
-            </div>
-            <div class="card-content">
-              <h4>Typeform</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-                nesciunt, non sit libero, corrupti ex.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div class="card-list">
+          <ul class="card-list-column">
+            <li class="card">
+              <div class="card-img">
+                <img src="assets/images/logo-slack.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h4>Slack</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Itaque quasi non eum, amet deleniti qui!
+                </p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-img">
+                <img src="assets/images/logo-gsuite.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h4>GSuite</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  inventore vitae quibusdam culpa dolores? Veritatis.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="card-list-column">
+            <li class="card">
+              <div class="card-img">
+                <img src="assets/images/logo-trello.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h4>Trello</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis corrupti corporis laborum, debitis omnis quis?
+                </p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card-img">
+                <img src="assets/images/logo-asana.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h4>Asana</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti corporis amet facilis eius expedita laboriosam.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="card-list-column">
+            <li class="card">
+              <div class="card-img">
+                <img src="assets/images/logo-salesforce.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h4>Salesforce</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repudiandae eveniet, maiores harum, sit doloribus nulla.
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-img">
+                <img src="assets/images/logo-typeform.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h4>Typeform</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem nesciunt, non sit libero, corrupti ex.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h3>Start using Fylo today</h3>
-        <small>
-          It only takes a minute to sign up and our free starter tier is
-          extremely generous. If you have any questions, our support team would
-          be happy to help you.
-        </small>
-        <button class="btn btn-primary call-to-action-btn">Get Started</button>
+      <section class="secondary-call-to-action">
+        <div class="section-heading">
+          <h3>Start using Fylo today</h3>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+
+        <a class="btn btn-primary call-to-action-btn">
+          Get Started
+        </a>
       </section>
     </main>
 
     <footer>
-      <div class="contact-area">
-        <div class="logo">
-          <div class="logo-img">
-            <img src="" alt="" />
-          </div>
-          <h2>Fylo</h2>
+      <div class="logo">
+        <div class="logo-img">
+          <img src="assets/images/logo-white.svg" alt="Fylo" />
         </div>
-        <h4>
-          Receive updates from us, including tips and tricks on how to improve
-          your workflow.
-        </h4>
+      </div>
 
-        <form action="#" method="POST">
-          <input type="email" placeholder="Your email" autocomplete="email" />
-          <input type="button" value="Join" class="btn btn-primary" />
-        </form>
+      <div class="inner-flex-wrapper">
+        <div class="contact-area">
+          <h4>
+            Receive updates from us, including tips and tricks on how to improve
+            your workflow.
+          </h4>
 
-        <ul class="contact">
+          <form action="#" method="POST">
+            <input type="email" placeholder="Your email" autocomplete="email" />
+            <input type="submit" value="Join" class="btn btn-primary" />
+          </form>
+
+          <ul class="contact">
+            <li>
+              <i><img src="assets/images/icon-phone.svg" alt=""/></i>
+              Phone : +1-543-123-4567
+            </li>
+            <li>
+              <i><img src="assets/images/icon-email.svg" alt=""/></i>
+              example@fylo.com
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-links-lists">
           <li>
-            <i><img src="assets/images/icon-phone.svg" alt=""/></i>
-            Phone : +1-543-123-4567
+            <h4>Fylo</h4>
+            <ul>
+              <li><a href="#">Desktop App</a></li>
+              <li><a href="#">Mobile App</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Feature</a></li>
+            </ul>
           </li>
+
           <li>
-            <i><img src="assets/images/icon-email.svg" alt=""/></i>
-            example@fylo.com
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
           </li>
         </ul>
       </div>
-
-      <ul class="footer-links-lists">
-        <li>
-          <h4>Fylo</h4>
-          <ul>
-            <li>Desktop App</li>
-            <li>Mobile App</li>
-            <li>Pricing</li>
-            <li>Feature</li>
-          </ul>
-        </li>
-
-        <li>
-          <h4>Company</h4>
-          <ul>
-            <li>About Us</li>
-            <li>Jobs</li>
-            <li>Press</li>
-            <li>Blog</li>
-          </ul>
-        </li>
-
-        <li>
-          <h4>Support</h4>
-          <ul>
-            <li>Contact Us</li>
-            <li>Terms</li>
-            <li>Privacy</li>
-          </ul>
-        </li>
-      </ul>
     </footer>
   </body>
 </html>

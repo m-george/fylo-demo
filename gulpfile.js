@@ -22,7 +22,7 @@ exports.default = cb => {
 };
 
 exports.watch = cb => {
-  watch([`styles/*.scss`], function(cb) {
+  watch([`styles/*.scss`, `styles/partials/*.scss`], function(cb) {
     css();
     cb();
   });
